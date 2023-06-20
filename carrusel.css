@@ -1,0 +1,368 @@
+@font-face { 
+   font-family: Montserrat;
+   src: url('Nutmeg-Light.ttf') format("truetype");}
+
+
+@font-face { 
+   font-family: Montserrat;
+   src: url('Nutmeg-Light.ttf') format("truetype");}
+
+
+@-webkit-keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+       font-family: Montserrat;
+
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+       font-family: Montserrat;
+
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;   
+    font-family: Montserrat;
+
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+    
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+body {
+
+  font-family: "Montserrat";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body #scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+body #scene #left-zone {
+  background: #fff;
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: left;
+}
+body #scene #left-zone .list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+body #scene #left-zone .list li.item input[type=radio] {
+  display: none;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_codigovioleta:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_2.jpg?raw=true");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_violenciafamiliar:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_7.jpg?raw=true");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_OrdenesyMedidas:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  background-image: url("https://raw.githubusercontent.com/nancymanzo/shiny_codigo_violeta/main/imagenes/photo_2023-03-03_16-01-10_6.jpg");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_Incidencia:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_5.jpg?raw=true");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_Atenciones:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10.jpg?raw=true");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_Municipal:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_3.jpg?raw=truehttp://www.informarte.mx/wp-content/uploads/2015/08/JALISCO.png");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_Regional:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_4.jpg?raw=true");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+
+body #scene #left-zone .list li.item input[type=radio] ~ .content {
+  position: absolute;
+  left: 350px;
+  top: -400px;
+  width: 650px;
+  height: 400px;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_codigovioleta .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_2.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_codigovioleta h1 {
+  color: #722282;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_violenciafamiliar .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_7.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_violenciafamiliar h1 {
+  color: #a87bc9;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_OrdenesyMedidas .picto {
+  height: 90px;
+  width: 90px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_6.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_OrdenesyMedidas h1 {
+  color: #722282;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Incidencia .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_5.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Incidencia h1 {
+  color: #a87bc9;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Atenciones .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Atenciones h1 {
+  color: #722282;
+}
+
+
+
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Municipal .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_3.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Municipal h1 {
+  color: #a87bc9;
+}
+
+
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Regional .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://github.com/nancymanzo/shiny_codigo_violeta/blob/main/imagenes/photo_2023-03-03_16-01-10_4.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Regional h1 {
+  color: #722282;
+}
+
+
+body #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content p {
+  max-width: 50%;
+  text-align: center;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+  opacity: 1;
+  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_codigovioleta {
+  color: #722282;
+  border-right: solid 4px #722282;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_violenciafamiliar {
+  color: #a87bc9;
+  border-right: solid 4px #a87bc9;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_OrdenesyMedidas {
+  color: #722282;
+  border-right: solid 4px #722282;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Incidencia {
+  color: #a87bc9;
+  border-right: solid 4px #a87bc9;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Atenciones {
+  color: #722282;
+  border-right: solid 4px #722282;
+}
+
+
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Municipal {
+  color: #a87bc9;
+  border-right: solid 4px #a87bc9;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Regional {
+  color: #722282;
+  border-right: solid 4px #722282;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #middle-border {
+  background-color: #eee;
+  height: 75%;
+  flex-grow: 1;
+  max-width: 2px;
+  z-index: 0;
+}
+body #scene #right-zone {
+  background: #fff;
+  height: 100%;
+  flex-grow: 1;
+}
